@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.XPathLexer;
 public class XPathSyntaxKit extends DefaultSyntaxKit {
 
     public XPathSyntaxKit() {
-        super(new XPathLexer());
+        super(new XPathLexer(), "text/xpath");
     }
 }

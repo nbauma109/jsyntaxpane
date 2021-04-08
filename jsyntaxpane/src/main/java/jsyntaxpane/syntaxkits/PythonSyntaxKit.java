@@ -23,7 +23,7 @@ import jsyntaxpane.lexers.PythonLexer;
 public class PythonSyntaxKit extends DefaultSyntaxKit {
 
     public PythonSyntaxKit() {
-        super(new PythonLexer());
+        super(new PythonLexer(), "text/python");
     }
 
 }

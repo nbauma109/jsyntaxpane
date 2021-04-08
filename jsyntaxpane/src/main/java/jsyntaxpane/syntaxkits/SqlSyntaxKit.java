@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.SqlLexer;
 public class SqlSyntaxKit extends DefaultSyntaxKit {
 
     public SqlSyntaxKit() {
-        super(new SqlLexer());
+        super(new SqlLexer(), "text/sql");
     }
 }

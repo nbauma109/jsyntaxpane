@@ -24,10 +24,10 @@ import jsyntaxpane.lexers.ClojureLexer;
 public class ClojureSyntaxKit extends DefaultSyntaxKit {
 
     public ClojureSyntaxKit() {
-        super(new ClojureLexer());
+        super(new ClojureLexer(), "text/clojure");
     }
 
     public ClojureSyntaxKit(Lexer lexer) {
-        super(lexer);
+        super(lexer, "text/clojure");
     }
 }

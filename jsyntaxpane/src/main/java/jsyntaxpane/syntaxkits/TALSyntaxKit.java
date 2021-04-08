@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.TALLexer;
 public class TALSyntaxKit extends DefaultSyntaxKit {
 
     public TALSyntaxKit() {
-        super(new TALLexer());
+        super(new TALLexer(), "text/tal");
     }
 }

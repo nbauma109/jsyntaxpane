@@ -22,6 +22,6 @@ import jsyntaxpane.lexers.CppLexer;
 public class CppSyntaxKit extends CSyntaxKit {
 
     public CppSyntaxKit() {
-        super(new CppLexer());
+        super(new CppLexer(), "text/cpp");
     }
 }

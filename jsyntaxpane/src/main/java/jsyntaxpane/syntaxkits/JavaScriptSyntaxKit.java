@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.JavaScriptLexer;
 public class JavaScriptSyntaxKit extends DefaultSyntaxKit {
 
     public JavaScriptSyntaxKit() {
-        super(new JavaScriptLexer());
+        super(new JavaScriptLexer(), "text/javascript");
     }
 }

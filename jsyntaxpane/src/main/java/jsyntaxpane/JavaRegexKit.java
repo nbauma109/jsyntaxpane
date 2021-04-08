@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.SimpleRegexLexer;
 public class JavaRegexKit extends DefaultSyntaxKit {
 
     public JavaRegexKit() throws IOException {
-        super(new SimpleRegexLexer("javaRegex.properties"));
+        super(new SimpleRegexLexer("javaRegex.properties"), "text/x-java");
     }
 }

@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.DOSBatchLexer;
 public class DOSBatchSyntaxKit extends DefaultSyntaxKit {
 
     public DOSBatchSyntaxKit() {
-        super(new DOSBatchLexer());
+        super(new DOSBatchLexer(), "text/dosbatch");
     }
 }

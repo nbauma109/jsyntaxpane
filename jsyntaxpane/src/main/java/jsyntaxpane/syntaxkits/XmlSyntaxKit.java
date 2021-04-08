@@ -23,7 +23,7 @@ import jsyntaxpane.lexers.XmlLexer;
 public class XmlSyntaxKit extends DefaultSyntaxKit {
 
     public XmlSyntaxKit() {
-        super(new XmlLexer());
+        super(new XmlLexer(), "text/xml");
     }
 
 }

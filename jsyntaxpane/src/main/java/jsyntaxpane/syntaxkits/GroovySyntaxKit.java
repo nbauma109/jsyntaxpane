@@ -22,6 +22,6 @@ import jsyntaxpane.lexers.GroovyLexer;
 public class GroovySyntaxKit extends JavaSyntaxKit {
 
     public GroovySyntaxKit() {
-        super(new GroovyLexer());
+        super(new GroovyLexer(), "text/groovy");
     }
 }

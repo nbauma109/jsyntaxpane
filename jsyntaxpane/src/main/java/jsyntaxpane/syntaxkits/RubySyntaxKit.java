@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.RubyLexer;
 public class RubySyntaxKit extends DefaultSyntaxKit {
 
     public RubySyntaxKit() {
-        super(new RubyLexer());
+        super(new RubyLexer(), "text/ruby");
     }
 }

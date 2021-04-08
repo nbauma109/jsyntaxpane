@@ -22,6 +22,6 @@ import jsyntaxpane.lexers.JFlexLexer;
 public class JFlexSyntaxKit extends JavaSyntaxKit {
 
     public JFlexSyntaxKit() {
-        super(new JFlexLexer());
+        super(new JFlexLexer(), "text/jflex");
     }
 }

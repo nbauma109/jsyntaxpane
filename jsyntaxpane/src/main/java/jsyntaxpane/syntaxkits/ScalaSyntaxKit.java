@@ -24,10 +24,10 @@ import jsyntaxpane.lexers.ScalaLexer;
 public class ScalaSyntaxKit extends DefaultSyntaxKit {
 
     public ScalaSyntaxKit() {
-        super(new ScalaLexer());
+        super(new ScalaLexer(), "text/scala");
     }
 
     public ScalaSyntaxKit(Lexer lexer) {
-        super(lexer);
+        super(lexer, "text/scala");
     }
 }

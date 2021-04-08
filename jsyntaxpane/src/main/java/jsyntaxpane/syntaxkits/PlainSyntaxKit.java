@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.EmptyLexer;
 public class PlainSyntaxKit extends DefaultSyntaxKit {
 
     public PlainSyntaxKit() {
-        super(new EmptyLexer());
+        super(new EmptyLexer(), "text/plain");
     }
 }

@@ -24,7 +24,7 @@ import jsyntaxpane.lexers.CLexer;
 public class CSyntaxKit extends DefaultSyntaxKit {
 
     public CSyntaxKit() {
-        super(new CLexer());
+        super(new CLexer(), "text/c");
     }
 
     /**
@@ -32,7 +32,7 @@ public class CSyntaxKit extends DefaultSyntaxKit {
      * only subclasses may extend this with a new lexer.
      * @param lexer
      */
-    CSyntaxKit(Lexer lexer) {
-        super(lexer);
+    protected CSyntaxKit(Lexer lexer, String mimeType) {
+        super(lexer, mimeType);
     }
 }

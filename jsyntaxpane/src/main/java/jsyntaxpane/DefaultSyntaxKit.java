@@ -92,6 +92,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	private static Map<String, String> abbreviations;
 	private static String MENU_MASK_STRING = "control ";
 	private final Lexer lexer;
+	private final String mimeType;
 	private static final Logger LOG = Logger.getLogger(DefaultSyntaxKit.class.getName());
 	private final Map<JEditorPane, List<SyntaxComponent>> editorComponents =
 		new WeakHashMap<JEditorPane, List<SyntaxComponent>>();
@@ -129,9 +130,10 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	/**
 	 * Creates a new Kit for the given language
 	 */
-	public DefaultSyntaxKit(Lexer lexer) {
+	public DefaultSyntaxKit(Lexer lexer, String mimeType) {
 		super();
 		this.lexer = lexer;
+		this.mimeType = mimeType;
 	}
 
 	/**
@@ -489,7 +491,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	 */
 	@Override
 	public Document createDefaultDocument() {
-		return new SyntaxDocument(lexer);
+		return new SyntaxDocument(lexer, mimeType);
 	}
 
 	/**

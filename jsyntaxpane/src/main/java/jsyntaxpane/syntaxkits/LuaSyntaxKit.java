@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.LuaLexer;
 public class LuaSyntaxKit extends DefaultSyntaxKit {
 
     public LuaSyntaxKit() {
-        super(new LuaLexer());
+        super(new LuaLexer(), "text/lua");
     }
 }

@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.PropertiesLexer;
 public class PropertiesSyntaxKit extends DefaultSyntaxKit {
 
     public PropertiesSyntaxKit() {
-        super(new PropertiesLexer());
+        super(new PropertiesLexer(), "text/properties");
     }
 }

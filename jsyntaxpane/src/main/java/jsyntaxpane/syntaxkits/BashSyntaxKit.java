@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.BashLexer;
 public class BashSyntaxKit extends DefaultSyntaxKit {
 
     public BashSyntaxKit() {
-        super(new BashLexer());
+        super(new BashLexer(), "text/bash");
     }
 }

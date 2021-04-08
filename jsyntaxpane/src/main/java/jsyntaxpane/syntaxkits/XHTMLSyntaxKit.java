@@ -23,6 +23,6 @@ import jsyntaxpane.lexers.XHTMLLexer;
 public class XHTMLSyntaxKit extends DefaultSyntaxKit {
 
     public XHTMLSyntaxKit() {
-        super(new XHTMLLexer());
+        super(new XHTMLLexer(), "text/xhtml");
     }
 }

@@ -13,6 +13,10 @@
  */
 package jsyntaxpane.syntaxkits;
 
+import javax.swing.text.EditorKit;
+
+import org.openide.util.lookup.ServiceProvider;
+
 import jsyntaxpane.DefaultSyntaxKit;
 import jsyntaxpane.Lexer;
 import jsyntaxpane.lexers.JavaLexer;
@@ -21,13 +25,14 @@ import jsyntaxpane.lexers.JavaLexer;
  *
  * @author Ayman Al-Sairafi
  */
+@ServiceProvider(service = EditorKit.class)
 public class JavaSyntaxKit extends DefaultSyntaxKit {
 
     public JavaSyntaxKit() {
-        super(new JavaLexer());
+        super(new JavaLexer(), "text/x-java");
     }
 
-    JavaSyntaxKit(Lexer lexer) {
-        super(lexer);
+    protected JavaSyntaxKit(Lexer lexer, String mimeType) {
+        super(lexer, mimeType);
     }
 }
